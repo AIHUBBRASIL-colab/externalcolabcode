@@ -115,7 +115,7 @@ def run_script():
 
     def clone_and_copy_repo(repo_path):
         # New repository link
-        new_repo_link = "https://github.com/kalomaze/Mangio-Kalo-Tweaks.git"
+        new_repo_link = "https://github.com/AIHUBBRASIL-colab/Mangio-Kalo-Tweaks.git"
         # Temporary path to clone the repository
         temp_repo_path = "/content/temp_Mangio-RVC-Fork"
         # New folder name
@@ -127,7 +127,7 @@ def run_script():
 
         run_cmd("git checkout bf0ffdbc35da09b57306e429c6deda84496948a1")
 
-        run_cmd("wget https://github.com/kalomaze/Mangio-Kalo-Tweaks/raw/patch-1/EasierGUI.py")
+        run_cmd("wget https://github.com/AIHUBBRASIL-colab/Mangio-Kalo-Tweaks/raw/patch-1/EasierGUI.py")
 
         # Edit the file here, before copying
         edit_file(f"{temp_repo_path}/infer-web.py")
@@ -155,7 +155,7 @@ def run_script():
     shutil.rmtree('/content/torchcrepe', ignore_errors=True)
 
     # Download the torchcrepe folder from the maxrmorrison/torchcrepe repository
-    run_cmd("git clone https://github.com/maxrmorrison/torchcrepe.git")
+    run_cmd("git clone https://github.com/AIHUBBRASIL-colab/torchcrepe.git")
     shutil.move('/content/torchcrepe/torchcrepe', '/content/Retrieval-based-Voice-Conversion-WebUI/')
     shutil.rmtree('/content/torchcrepe', ignore_errors=True)  # Delete the torchcrepe repository folder
 
